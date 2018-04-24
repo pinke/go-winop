@@ -40,3 +40,13 @@ type WindowInfo struct {
 	WindowType      Atom
 	CreatorVersion  Word
 }
+
+type ComboBoxInfo struct {
+	cbSize      Dword
+	rcItem      Rect
+	rcButton    Rect
+	stateButton Dword
+	hwndCombo   Hwnd
+	hwndItem    Hwnd
+	hwndList    Hwnd
+}

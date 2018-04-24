@@ -1,5 +1,7 @@
 # Window Operations for MS-Windows
 
+##### forked from <a href="https://github.com/koron/go-winop">koron/go-winop</a>
+
 Example to enumerate visible top level windows:
 
 ```go
@@ -8,7 +10,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/koron/go-winop"
+	"github.com/pinke/go-winop"
 )
 
 func main() {
@@ -28,3 +30,10 @@ func main() {
 	})
 }
 ```
+
+## more func
+*  func enumChildWindows(hwnd Hwnd, fn uintptr, param uintptr) (result bool)
+*  func getClassName(hwnd Hwnd, buf []uint16, size int) (length int) 
+*  func GetComboBoxInfo(hwnd Hwnd, info *ComboBoxInfo) (result bool)
+*  func setWindowText(hwnd Hwnd, text string) (bool) 
+
